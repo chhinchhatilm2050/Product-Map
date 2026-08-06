@@ -1,0 +1,78 @@
+html {
+  scroll-behavior: smooth;
+}
+.mar {
+  background-color: rgba(0, 0, 255, 0.679);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 35px;
+  color: white;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  display: flex;
+  margin-top: 50px;
+  font-family: khmer OS Siemreap;
+}
+h1::before{
+  content: '';
+  width: 50px;
+  height: 1px;
+  background-color: rgb(81, 78, 78) !important;
+  position: absolute;
+  left: 320px;
+  top: 20px;
+}
+h1::after{
+   content: '';
+  width: 50px;
+  height: 1px;
+  background-color: rgb(73, 72, 72) !important;
+  position: absolute;
+  right: 320px;
+  top: 20px;
+}
+.link-page div a {
+  color: rgba(255, 0, 0, 0.725);
+  text-decoration: none;
+  font-family: Khmer OS Dangrek;
+  font-size: 18px;
+  transition: 0.5s ease;
+  line-height: 40px;
+}
+.link-page div a:hover {
+  color: blue;
+}
+.mar div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Khmer OS Siemreap;
+}
+.mar:hover {
+  background-color: rgba(204, 12, 12, 0.39);
+  color: black;
+}
+.title {
+  font-family: Khmer OS Muol Light;
+}
+.title .text {
+  background-color: green;
+}
+.content {
+  width: 1200px;
+  height: auto;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-self: center;
+}
+.arrow-up {
+  bottom: 50px;
+  right: 20px;
+  text-decoration: none;
+}

@@ -1,0 +1,18 @@
+h3, h4{
+   font-family: Khmer OS Muol Light;;
+}
+ul li {
+    font-family: Khmer OS Siemreap;
+}
+div {
+    font-family: Khmer OS Siemreap;
+    line-height: 40px;
+}
+a {
+    text-decoration: none;
+    color: rgb(53, 53, 233);
+    transition: 0.5s ease;
+}
+a:hover {
+    color: red;
+}
