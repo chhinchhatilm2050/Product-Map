@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="km">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <meta
+      name="description"
+      content="ទំនាក់ទំនងមកកាន់យើងខ្ញុំ តាមរយៈបណ្ដាញសង្គម ទូរស័ព្ទ និងអ៊ីមែល។"
+    />
+    <title>ទំនាក់ទំនង</title>
     <link rel="stylesheet" href="../../styles/style.css" />
     <link rel="stylesheet" href="../../Bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="../../styles/siemreap/style.css" />
@@ -12,9 +16,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
   </head>
-  <body>
-    <div class="container">
+  <body id="top">
+    <main class="container">
       <div>
         <h1 class="position-relative text-center mt-3 text-primary title">
           ខេត្តនៅក្នុងប្រទេសកម្ពុជា
@@ -115,39 +120,82 @@
           </div>
         </div>
       </div>
-      <a class="arrow-up position-fixed fs-3" href="../contack/contact.html"
+      <a class="arrow-up position-fixed fs-3" href="#top" aria-label="ត្រឡប់ទៅខាងលើ"
         ><i class="ri-arrow-up-double-line"></i
       ></a>
       <hr />
-      <section>
-        <h3 class="text-primary text-center mt-5 ">
+      <section class="contact-section" aria-labelledby="contact-title">
+        <h3 id="contact-title" class="text-primary text-center mt-5">
           ទំនាក់ទំនងមកកាន់យើងខ្ញុំ
         </h3>
-        <div class="contact-me" data-aos="zoom-in">
-          <div>
-            <img src="../../img/IMG_4025.JPG" alt="" style="width: 490px; padding: 5px; border-radius: 20px;">
+        <div class="contact-me" data-aos="fade-up">
+          <div class="contact-photo">
+            <img
+              src="../../img/IMG_4025.JPG"
+              alt="រូបថតរបស់ ឈីន ឆាត"
+              data-aos="zoom-in"
+            />
           </div>
-          <div class="information">
-            <div class="icon">
-              <span class="a"><i class="ri-facebook-circle-fill"></i></span>
-              <span class="b"><i class="ri-telegram-fill"></i></span>
-              <span class="c"><i class="ri-phone-fill"></i></span>
-              <span class="d"><i class="ri-mail-fill"></i></span>
-              <span class="e"><i class="ri-map-pin-user-fill"></i></span>
-            </div>
-            <div class="text">
-              <a  class="E" href="https://www.facebook.com/share/1EuPnXbj3D/?mibextid=wwXIfr"><span>ឈីន ឆាត</span></a>
-              <a href="https://t.me/ChhatChhin"><span class="A">060 600 705</span></a>
-              <span class="B">060 600 705</span>
-              <span class="C">chhinchhat.ilm2050@gmail.com</span>
-              <span class="D">ភ្នំពេញ, ខណ្ឌទួលគោក</span>
-              
-            </div>
+          <div class="contact-information">
+            <a
+              class="contact-item"
+              href="https://www.facebook.com/share/1EuPnXbj3D/?mibextid=wwXIfr"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="contact-icon" aria-hidden="true"><i class="ri-facebook-circle-fill"></i></span>
+              <span class="contact-copy">
+                <span class="contact-label">Facebook</span>
+                <span class="contact-value">ឈីន ឆាត</span>
+              </span>
+              <i class="ri-arrow-right-up-line contact-external" aria-hidden="true"></i>
+            </a>
+            <a
+              class="contact-item"
+              href="https://t.me/ChhatChhin"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="contact-icon" aria-hidden="true"><i class="ri-telegram-fill"></i></span>
+              <span class="contact-copy">
+                <span class="contact-label">Telegram</span>
+                <span class="contact-value">@ChhatChhin</span>
+              </span>
+              <i class="ri-arrow-right-up-line contact-external" aria-hidden="true"></i>
+            </a>
+            <a class="contact-item" href="tel:+85560600705">
+              <span class="contact-icon" aria-hidden="true"><i class="ri-phone-fill"></i></span>
+              <span class="contact-copy">
+                <span class="contact-label">ទូរស័ព្ទ</span>
+                <span class="contact-value">060 600 705</span>
+              </span>
+              <i class="ri-arrow-right-up-line contact-external" aria-hidden="true"></i>
+            </a>
+            <a class="contact-item" href="mailto:chhinchhat.ilm2050@gmail.com">
+              <span class="contact-icon" aria-hidden="true"><i class="ri-mail-fill"></i></span>
+              <span class="contact-copy">
+                <span class="contact-label">អ៊ីមែល</span>
+                <span class="contact-value">chhinchhat.ilm2050@gmail.com</span>
+              </span>
+              <i class="ri-arrow-right-up-line contact-external" aria-hidden="true"></i>
+            </a>
+            <a
+              class="contact-item"
+              href="https://www.google.com/maps/search/?api=1&query=Tuol+Kouk%2C+Phnom+Penh"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="contact-icon" aria-hidden="true"><i class="ri-map-pin-user-fill"></i></span>
+              <span class="contact-copy">
+                <span class="contact-label">ទីតាំង</span>
+                <span class="contact-value">ភ្នំពេញ, ខណ្ឌទួលគោក</span>
+              </span>
+              <i class="ri-arrow-right-up-line contact-external" aria-hidden="true"></i>
+            </a>
           </div>
         </div>
-        </div>
-        </div>
-    </div>
+      </section>
+    </main>
     <div class="mb-5"></div>
     <marquee
       class="mar"
@@ -159,12 +207,14 @@
       scrollamount="10"
     >
       <div>
-        <img src="../img/setec.png" alt="" width="80px" />
+        <img src="../../img/setec.png" alt="" width="80px" />
         វិទ្យាស្ថាន ស៊ីតិក | បង្រៀនដោយ​លោកគ្រូ រី​ វិសាន | ក្រុម SW15 |
         វេនសិក្សា យប់ | មុខវិទ្យា Web Development I | ឆ្នាំទី១​ ឆមាស២ | Project
         Map | ធ្វើដោយនិស្សិត ឈ្មោះ ឈីន ឆាត
       </div>
     </marquee>
-    <script src="../Bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../../Bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+    <script src="../../styles/aos-reveal.js" defer></script>
   </body>
 </html>
