@@ -10,11 +10,11 @@ The site has no build step or package dependencies. From the project root, start
 python -m http.server 8000
 ```
 
-Open [http://localhost:8000/province/](http://localhost:8000/province/). A local server is recommended so relative links, images, and the clickable map work consistently.
+Open [http://localhost:8000/](http://localhost:8000/). The root page forwards to the province map at `/province/`. A local server is recommended so relative links, images, and the clickable map work consistently.
 
 ## Host the site
 
-Upload the project folders while preserving their names and relative paths. For GitHub Pages, publish from the repository root and use `/province/` as the site's entry page. Bootstrap is included locally. Remix Icon and the AOS animation library are loaded from CDNs and need an internet connection; scroll reveals use a built-in fallback if AOS cannot load.
+Upload the project folders while preserving their names and relative paths. Deploy the repository root as a static site; the root `index.html` forwards visitors to `/province/`. Bootstrap is included locally. Remix Icon and the AOS animation library are loaded from CDNs and need an internet connection; scroll reveals use a built-in fallback if AOS cannot load.
 
 ## Project layout
 
